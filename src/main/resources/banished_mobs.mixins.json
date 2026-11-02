@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.restonic4.banishedmobs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "NaturalSpawnerMixin",
+    "ServerLevelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

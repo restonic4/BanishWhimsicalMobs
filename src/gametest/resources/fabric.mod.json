@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "banished_mobs_test",
+  "version": "1.0.0",
+  "name": "Banished Mobs game tests",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-gametest": ["com.restonic4.banishedmobs.gametest.BanishmentGameTests"]
+  },
+  "depends": {
+    "banished_mobs": "*"
+  }
+}

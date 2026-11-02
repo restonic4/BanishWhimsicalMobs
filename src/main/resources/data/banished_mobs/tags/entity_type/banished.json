@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:undead",
+    "minecraft:witch",
+    "minecraft:evoker",
+    "minecraft:illusioner",
+    "minecraft:vex",
+    "minecraft:warden",
+    "minecraft:ghast",
+    "minecraft:blaze"
+  ]
+}
