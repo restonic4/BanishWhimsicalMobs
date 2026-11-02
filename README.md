@@ -1,6 +1,6 @@
 # Banish Whimsical Mobs
 
-A Fabric mod for Minecraft **1.21.1** that removes whimsical mobs from the game: they stop spawning, and the ones that already exist disappear.
+A Fabric mod for Minecraft **1.21.1** that removes whimsical mobs from the game.
 
 By default these are banned:
 
@@ -8,13 +8,9 @@ By default these are banned:
 - witch, evoker, illusioner, vex, warden, ghast, blaze
 - creeper, enderman
 
-Everything else (spiders, pillagers, villagers, animals, the ender dragon, ...) is untouched. Players are never removed.
+Everything else (spiders, pillagers, villagers, animals, the ender dragon, ...) is the same.
 
-The list is not hard-coded. You change it with a small datapack, no coding and no new jar needed. This guide shows how.
-
-**Requires:** Fabric Loader and Fabric API. Install the mod where the world runs: in your game's `mods` folder for singleplayer, or in the server's `mods` folder.
-
-> Banning enderman and blaze together makes ender pearls and eyes of ender very hard to get (villager trades and piglin bartering only), so the End is practically closed. Banning ghast and blaze removes ghast tears and blaze rods from survival. Change the list if you don't want that.
+The list is not hard-coded. You change it with a small datapack, no coding needed.
 
 ---
 
@@ -51,6 +47,8 @@ Inside your pack folder, create a text file named exactly `pack.mcmeta` with thi
 `48` is the datapack version of Minecraft 1.21.1. Keep it as is.
 
 **Windows warning:** by default Windows hides file extensions, and Notepad likes to save `pack.mcmeta` as `pack.mcmeta.txt`. In File Explorer, enable *View > Show > File name extensions* and check that the file is really called `pack.mcmeta`. In Notepad's save dialog, set "Save as type" to **All files**. The same warning applies to `banished.json` below.
+
+If you are on a real operating system like Linux, you probably won't have this problem.
 
 ### 5. Create the folders for the list
 
