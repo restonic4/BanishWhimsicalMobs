@@ -68,7 +68,7 @@ Watch out: `banish_whimsical_mobs` has underscores, `entity_type` is singular, a
 
 ### 6. Write the list in `banished.json`
 
-Pick one of these three.
+Pick the one that fits.
 
 **Add more mobs to the default list** (here the endermite and every raider):
 
@@ -102,11 +102,24 @@ Pick one of these three.
 }
 ```
 
+**Ban mobs from another mod** (keeping the default list). The mob's name is `modid:name`, where the first part is the mod's id instead of `minecraft`. Type `/summon ` in chat with the mod installed and the mod's mobs show up in the list. In this example `mobsmod:ghoul` and `othermod:wraith` are two mobs from two different mods:
+
+```json
+{
+  "values": [
+    { "id": "mobsmod:ghoul", "required": false },
+    { "id": "othermod:wraith", "required": false }
+  ]
+}
+```
+
+Every mod mob should be written in this `{ "id": ..., "required": false }` form. If you write it as a plain `"mobsmod:ghoul"` and that mod is not installed, the **whole list fails to load and nothing at all is banned**. The game only reports it as an error in the log (`Couldn't load tag banish_whimsical_mobs:banished as it is missing following references`). With `required: false`, a missing mod is simply skipped.
+
 #### How to write the entries
 
 - A single mob: `"minecraft:zombie"`. This is `minecraft:` followed by the mob's name in lowercase with underscores (`minecraft:wither_skeleton`, `minecraft:zombie_villager`). If you are unsure, type `/summon ` in the game chat and the list of names appears as you type.
 - A whole group: a name starting with `#`, for example `"#minecraft:undead"`. Useful groups: `#minecraft:undead`, `#minecraft:zombies`, `#minecraft:skeletons`, `#minecraft:illager`, `#minecraft:raiders`.
-- A mob from another mod, written as `{ "id": "somemod:ghoul", "required": false }`. The `required: false` part stops the pack from failing when that mod is not installed.
+- A mob from another mod: see the example above.
 - Entries are separated by commas. **No comma after the last entry.** Use plain straight quotes `"`, not curly ones.
 
 ### 7. Apply it
