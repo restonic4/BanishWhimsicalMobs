@@ -1,4 +1,4 @@
-package com.restonic4.banishedmobs;
+package com.restonic4.banishwhimsicalmobs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.player.Player;
 
 public final class Banishment {
-	public static final TagKey<EntityType<?>> BANISHED = TagKey.create(Registries.ENTITY_TYPE, BanishedMobs.id("banished"));
+	public static final TagKey<EntityType<?>> BANISHED = TagKey.create(Registries.ENTITY_TYPE, BanishWhimsicalMobs.id("banished"));
 
 	private Banishment() {}
 
@@ -56,7 +56,7 @@ public final class Banishment {
 		}
 
 		if (discarded > 0) {
-			BanishedMobs.LOGGER.info("Data reload banished {} loaded entities", discarded);
+			BanishWhimsicalMobs.LOGGER.info("Data reload banished {} loaded entities", discarded);
 		}
 	}
 }

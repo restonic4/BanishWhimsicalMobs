@@ -1,4 +1,4 @@
-package com.restonic4.banishedmobs.data;
+package com.restonic4.banishwhimsicalmobs.data;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -20,7 +20,7 @@ class BanishedTagTest {
 	private static final Pattern ENTRY = Pattern.compile("#?[a-z0-9_.-]+:[a-z0-9_./-]+");
 
 	private static JsonObject shipped() throws Exception {
-		try (InputStream in = BanishedTagTest.class.getResourceAsStream("/data/banished_mobs/tags/entity_type/banished.json")) {
+		try (InputStream in = BanishedTagTest.class.getResourceAsStream("/data/banish_whimsical_mobs/tags/entity_type/banished.json")) {
 			assertNotNull(in);
 			return JsonParser.parseReader(new InputStreamReader(in, StandardCharsets.UTF_8)).getAsJsonObject();
 		}

@@ -1,6 +1,6 @@
-package com.restonic4.banishedmobs.gametest;
+package com.restonic4.banishwhimsicalmobs.gametest;
 
-import com.restonic4.banishedmobs.Banishment;
+import com.restonic4.banishwhimsicalmobs.Banishment;
 import java.util.ArrayList;
 import java.util.List;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;

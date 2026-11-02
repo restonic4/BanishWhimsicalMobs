@@ -33,7 +33,7 @@ test {
 fabricApi {
 	configureTests {
 		createSourceSet = true
-		modId = 'banished_mobs_test'
+		modId = 'banish_whimsical_mobs_test'
 		enableGameTests = true
 		enableClientGameTests = false
 		eula = true

@@ -1,6 +1,6 @@
-package com.restonic4.banishedmobs.mixin;
+package com.restonic4.banishwhimsicalmobs.mixin;
 
-import com.restonic4.banishedmobs.Banishment;
+import com.restonic4.banishwhimsicalmobs.Banishment;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.MobCategory;
@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class NaturalSpawnerMixin {
 	// Refusing here, before the mob is built, keeps Mob.finalizeSpawn from adding jockey mounts for a mob that is then refused.
 	@Inject(method = "isValidSpawnPostitionForType", at = @At("HEAD"), cancellable = true)
-	private static void banishedMobs$skip(
+	private static void banishWhimsicalMobs$skip(
 		ServerLevel level,
 		MobCategory category,
 		StructureManager structures,

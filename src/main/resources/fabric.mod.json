@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "banished_mobs",
+  "id": "banish_whimsical_mobs",
   "version": "${version}",
-  "name": "Banished Mobs",
-  "description": "Stops mystical mobs (undead, witches, spirits) from spawning and removes the ones that exist. The list is the entity type tag banished_mobs:banished.",
+  "name": "Banish Whimsical Mobs",
+  "description": "Stops whimsical mobs (undead, witches, creepers, endermen and more) from spawning and removes the ones that exist. The list is the entity type tag banish_whimsical_mobs:banished.",
   "authors": ["restonic4"],
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.restonic4.banishedmobs.BanishedMobs"]
+    "main": ["com.restonic4.banishwhimsicalmobs.BanishWhimsicalMobs"]
   },
-  "mixins": ["banished_mobs.mixins.json"],
+  "mixins": ["banish_whimsical_mobs.mixins.json"],
   "depends": {
     "fabricloader": ">=0.16.0",
     "minecraft": "1.21.1",
