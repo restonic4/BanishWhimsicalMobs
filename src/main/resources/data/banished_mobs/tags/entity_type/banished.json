@@ -8,6 +8,8 @@
     "minecraft:vex",
     "minecraft:warden",
     "minecraft:ghast",
-    "minecraft:blaze"
+    "minecraft:blaze",
+    "minecraft:creeper",
+    "minecraft:enderman"
   ]
 }

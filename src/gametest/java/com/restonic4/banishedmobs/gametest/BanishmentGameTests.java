@@ -18,10 +18,10 @@ public class BanishmentGameTests implements FabricGameTest {
 		EntityType.ZOMBIE, EntityType.HUSK, EntityType.DROWNED, EntityType.ZOMBIE_VILLAGER, EntityType.ZOMBIFIED_PIGLIN, EntityType.ZOGLIN,
 		EntityType.ZOMBIE_HORSE, EntityType.SKELETON, EntityType.STRAY, EntityType.BOGGED, EntityType.WITHER_SKELETON, EntityType.SKELETON_HORSE,
 		EntityType.PHANTOM, EntityType.WITHER, EntityType.WITCH, EntityType.EVOKER, EntityType.ILLUSIONER, EntityType.VEX,
-		EntityType.WARDEN, EntityType.GHAST, EntityType.BLAZE
+		EntityType.WARDEN, EntityType.GHAST, EntityType.BLAZE, EntityType.CREEPER, EntityType.ENDERMAN
 	);
 	private static final List<EntityType<?>> KEPT = List.of(
-		EntityType.COW, EntityType.CREEPER, EntityType.SPIDER, EntityType.VILLAGER, EntityType.ENDERMAN, EntityType.PILLAGER,
+		EntityType.COW, EntityType.SPIDER, EntityType.VILLAGER, EntityType.PILLAGER,
 		EntityType.ENDER_DRAGON, EntityType.IRON_GOLEM, EntityType.SLIME
 	);
 
